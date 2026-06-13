@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Special+Elite&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #080808;
+    --foreground: #e8e8e8;
+    --card: #0d0d0d;
+    --card-foreground: #e8e8e8;
+    --popover: #0d0d0d;
+    --popover-foreground: #e8e8e8;
+    --primary: #8b0000;
+    --primary-foreground: #e8e8e8;
+    --secondary: #6b0000;
+    --secondary-foreground: #e8e8e8;
+    --muted: #1a0a0a;
+    --muted-foreground: #888888;
+    --accent: #1a3a1a;
+    --accent-foreground: #e8e8e8;
+    --destructive: #ef4444;
+    --destructive-foreground: #fafafa;
+    --border: #2a0a0a;
+    --input: #1a0a0a;
+    --ring: #8b0000;
+    --radius: 0.5rem;
+    --navbar-background: #080808;
+    --sidebar-background: #080808;
+    --sidebar-foreground: #e8e8e8;
+    --sidebar-primary: #8b0000;
+    --sidebar-primary-foreground: #e8e8e8;
+    --sidebar-accent: #1a0a0a;
+    --sidebar-accent-foreground: #e8e8e8;
+    --sidebar-border: #2a0a0a;
+    --sidebar-ring: #8b0000;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    background: #080808;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+}
+
+/* Horror font utility */
+.font-horror {
+  font-family: 'Creepster', cursive;
+}
+
+.font-typewriter {
+  font-family: 'Special Elite', serif;
+}
+
+/* Game canvas container */
+#game-root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #080808;
+}
+
+/* Blood drip animation */
+@keyframes bloodDrip {
+  0% { transform: scaleY(0); opacity: 1; }
+  80% { transform: scaleY(1); opacity: 1; }
+  100% { transform: scaleY(1); opacity: 0; }
+}
+
+/* Flicker animation */
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+  20%, 22%, 24%, 55% { opacity: 0.4; }
+}
+
+.flicker {
+  animation: flicker 4s infinite;
+}
+
+/* Vignette effect overlay */
+.vignette {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.85) 100%);
+  z-index: 10;
+}
+
+/* Jump scare overlay */
+@keyframes jumpScare {
+  0% { opacity: 0; transform: scale(0.5); }
+  10% { opacity: 1; transform: scale(1.2); }
+  40% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1); }
+}
+
+.jump-scare {
+  animation: jumpScare 0.6s ease-out forwards;
+}
+
+/* Screen shake */
+@keyframes shake {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-4px, -3px); }
+  20% { transform: translate(4px, 3px); }
+  30% { transform: translate(-3px, 4px); }
+  40% { transform: translate(3px, -4px); }
+  50% { transform: translate(-4px, 3px); }
+  60% { transform: translate(4px, -3px); }
+  70% { transform: translate(-3px, -4px); }
+  80% { transform: translate(3px, 4px); }
+  90% { transform: translate(-2px, 2px); }
+}
+
+.screen-shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Pulse for danger */
+@keyframes dangerPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(139, 0, 0, 0.7); }
+  50% { box-shadow: 0 0 20px 10px rgba(139, 0, 0, 0); }
+}
+
+/* Canvas is the game */
+canvas {
+  display: block;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
