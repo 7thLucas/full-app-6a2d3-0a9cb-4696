@@ -1,37 +1,48 @@
 <style>
-  .mode-landscape .sl-metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
-  .mode-portrait .sl-metrics-grid { display: flex; flex-direction: column; gap: 1rem; }
+  .mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+  .mode-portrait  .sl-grid { grid-template-columns: repeat(1, 1fr); }
 </style>
-<section class="w-full h-full overflow-auto bg-white p-10">
-  <div class="flex items-center gap-3 mb-2">
-    <span class="text-xs font-bold tracking-widest uppercase" style="color:#8B0000;">Outcomes</span>
-  </div>
-  <h2 class="text-4xl font-bold text-slate-900 mb-6">Quantifiable Benefits</h2>
-  <p class="text-lg text-slate-600 mb-10 max-w-3xl">Trapped redefines the horror genre by combining authentic cultural storytelling with player agency, creating an experience that lingers long after the final escape.</p>
-  <div class="sl-metrics-grid mb-12"><article class="flex-1 min-w-[200px] bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-        <h3 class="text-3xl font-bold leading-none mb-2" style="color:#8B0000;">8 Unique Endings</h3>
-        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-2">Branching Narratives</h4>
-        <p class="text-slate-600 text-sm leading-relaxed">Each playthrough reveals different mysteries based on your choices and discoveries within the mansion</p>
-      </article>
-      <article class="flex-1 min-w-[200px] bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-        <h3 class="text-3xl font-bold leading-none mb-2" style="color:#8B0000;">120+ Minutes</h3>
-        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-2">Core Experience</h4>
-        <p class="text-slate-600 text-sm leading-relaxed">Fully voiced dialogue, exploration-based progression, and multiple puzzle routes ensure meaningful playtime</p>
-      </article>
-      <article class="flex-1 min-w-[200px] bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-        <h3 class="text-3xl font-bold leading-none mb-2" style="color:#8B0000;">4 Supernatural Entities</h3>
-        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-2">Distinct Encounters</h4>
-        <p class="text-slate-600 text-sm leading-relaxed">Each spirit has unique mechanics, lore, and ways to interact based on player decisions and cultural understanding</p>
-      </article></div>
-  <div class="rounded-2xl p-8" style="background-color:#2D1B2E;">
-    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
-      <div class="flex-1">
-        <h3 class="text-sm font-bold uppercase tracking-widest text-white/70 mb-2">Primary ROI</h3>
-        <p class="text-4xl font-black text-white">87%</p>
-      </div>
-      <div class="flex-[2] text-white/90 text-xl leading-relaxed font-medium border-l-0 md:border-l border-white/20 md:pl-8">
-        Player Recommendation Rate
-      </div>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full px-10 py-8">
+
+    <!-- Header -->
+    <div class="mb-5">
+      <span class="inline-block bg-red-900 text-white text-xs font-bold tracking-widest uppercase px-3 py-1 rounded mb-2">Who It's For</span>
+      <h2 class="text-2xl font-black text-slate-900">Three players. One bungalow. All terrified.</h2>
     </div>
+
+    <!-- Audience cards -->
+    <div class="sl-grid grid gap-4 flex-1">
+
+      <div class="bg-slate-900 rounded-xl p-6 flex flex-col gap-3">
+        <span class="text-2xl">🎮</span>
+        <p class="text-white font-bold text-sm">The Horror Fan</p>
+        <p class="text-slate-400 text-xs leading-relaxed">Craves atmosphere, jump scares, and genuine dread. Wants a game that feels dangerous — not just difficult. Horror Bangla delivers tension from the first second.</p>
+        <div class="mt-auto">
+          <span class="bg-red-900 text-red-200 text-xs px-2 py-1 rounded-full font-medium">Primary audience</span>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 rounded-xl p-6 flex flex-col gap-3">
+        <span class="text-2xl">🧩</span>
+        <p class="text-slate-900 font-bold text-sm">The Escape Room Player</p>
+        <p class="text-slate-600 text-xs leading-relaxed">Loves puzzle mechanics — locked doors, hidden keys, layered clues. Gets the satisfaction of cracking each room and pushing closer to the exit.</p>
+        <div class="mt-auto">
+          <span class="bg-slate-200 text-slate-700 text-xs px-2 py-1 rounded-full font-medium">Strong fit</span>
+        </div>
+      </div>
+
+      <div class="bg-red-900 rounded-xl p-6 flex flex-col gap-3">
+        <span class="text-2xl">💻</span>
+        <p class="text-white font-bold text-sm">The Casual Browser Gamer</p>
+        <p class="text-red-200 text-xs leading-relaxed">No install patience. Wants to click a link and be inside something interesting immediately. Horror Bangla is open-in-seconds — zero setup between the impulse and the nightmare.</p>
+        <div class="mt-auto">
+          <span class="bg-red-800 text-red-200 text-xs px-2 py-1 rounded-full font-medium">Zero-friction entry</span>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </section>
