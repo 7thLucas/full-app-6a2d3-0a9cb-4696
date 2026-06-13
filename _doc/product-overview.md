@@ -39,7 +39,6 @@ A single-player browser horror game set inside a large, dark bungalow. The playe
 - **Atmosphere-first**: visual and audio design creates dread before mechanics appear
 - **Tight scope**: one bungalow, one escape objective — depth through atmosphere and puzzle design, not feature sprawl
 
-## Open Items (to confirm during onboarding)
-- Final app name (pending A1.q4)
+## Open Items (to confirm during build)
 - Visual perspective / art style (2D top-down, point-and-click, first-person, etc.)
 - Specific puzzle types and horror event mechanics
