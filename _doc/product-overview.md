@@ -39,6 +39,12 @@ A single-player browser horror game set inside a large, dark bungalow. The playe
 - **Atmosphere-first**: visual and audio design creates dread before mechanics appear
 - **Tight scope**: one bungalow, one escape objective — depth through atmosphere and puzzle design, not feature sprawl
 
-## Open Items (to confirm during build)
-- Visual perspective / art style (2D top-down, point-and-click, first-person, etc.)
-- Specific puzzle types and horror event mechanics
+## Built — Confirmed Implementation
+- **Perspective**: Top-down 2D HTML5 Canvas (React Router + Canvas API)
+- **Map**: 21×15 tile bungalow with rooms, walls, locked doors, torch positions, and one exit
+- **Mechanics**: Collect 3 keys → doors unlock → reach the exit to win; 5 hidden clues
+- **Enemies**: 4 ghost AI with patrol + aggro-chase; health damage on contact
+- **Atmosphere**: Radial darkness vignette, flashlight effect, jump scare triggers, flicker effect
+- **Controls**: Keyboard (WASD/arrows) + touch/swipe for mobile
+- **Screens**: Gothic intro with blood-drip animation, win screen, lose screen
+- **Configurables**: gameTitle, playerSpeed, ghostCount, enableJumpScares, enableFlickerEffect, wall/floor/HUD colors, win/lose messages
