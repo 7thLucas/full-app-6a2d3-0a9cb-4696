@@ -1,43 +1,63 @@
 <style>
-  .mode-landscape .sl-features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
-  .mode-portrait .sl-features-grid { display: flex; flex-direction: column; gap: 1rem; }
+  .mode-landscape .sl-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .mode-portrait  .sl-steps { display: flex; flex-direction: column; gap: 0.75rem; }
 </style>
-<section class="w-full h-full overflow-auto bg-white p-10">
-  <div class="flex items-center justify-between mb-2">
-    <p class="text-xs font-semibold tracking-widest uppercase" style="color:#8B0000;">Core Capabilities</p>
-    <div class="flex items-center gap-1.5 px-2.5 py-1 border rounded-full" style="background-color:#8B0000; border-color:#8B000030;">
-      <span class="text-xs font-semibold" style="color:#ffffff;">Enabled</span>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full px-10 py-8">
+
+    <!-- Header -->
+    <div class="mb-6">
+      <span class="inline-block bg-red-900 text-white text-xs font-bold tracking-widest uppercase px-3 py-1 rounded mb-2">How to Play</span>
+      <h2 class="text-2xl font-black text-slate-900">Four steps. One way out.</h2>
     </div>
-  </div>
-  <h1 class="text-3xl font-bold text-slate-900 mb-4 leading-tight">Effortless Product Experience</h1>
-  <p class="text-slate-600 text-lg mb-8 max-w-2xl">Intuitive features designed for seamless adoption and long-term value delivery.</p>
-  <div class="sl-features-grid">
-    <div class="bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-xl p-5 shadow-sm">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center flex-shrink-0">
-               <span class="text-xl">✨</span>
-            </div>
-            <h3 class="font-bold text-slate-900 text-base">Explore the Cursed Mansion</h3>
-          </div>
-          <p class="text-slate-600 text-sm leading-relaxed">Navigate interconnected rooms filled with environmental clues, family portraits, and supernatural phenomena. Each room holds pieces of the mansion&#x27;s dark history and keys to your escape.</p>
+
+    <!-- Steps -->
+    <div class="sl-steps flex-1">
+
+      <div class="flex flex-col gap-2">
+        <div class="w-8 h-8 rounded-full bg-red-900 flex items-center justify-center flex-shrink-0">
+          <span class="text-white text-xs font-black">1</span>
         </div>
-        <div class="bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-xl p-5 shadow-sm">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center flex-shrink-0">
-               <span class="text-xl">✨</span>
-            </div>
-            <h3 class="font-bold text-slate-900 text-base">Uncover Bengali Folklore</h3>
-          </div>
-          <p class="text-slate-600 text-sm leading-relaxed">Encounter spirits rooted in authentic Bengali mythology. Learn their stories, understand their pain, and discover the ritualistic paths to appease or evade them for survival.</p>
+        <p class="text-slate-900 font-bold text-sm">Open the Link</p>
+        <p class="text-slate-500 text-xs leading-relaxed">No account. No download. Click the link and you're already inside the bungalow — darkness loads instantly in any browser.</p>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <div class="w-8 h-8 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+          <span class="text-white text-xs font-black">2</span>
         </div>
-        <div class="bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-xl p-5 shadow-sm">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center flex-shrink-0">
-               <span class="text-xl">✨</span>
-            </div>
-            <h3 class="font-bold text-slate-900 text-base">Make Consequential Choices</h3>
-          </div>
-          <p class="text-slate-600 text-sm leading-relaxed">Your decisions ripple throughout the narrative—from trust betrayals to ritual sacrifices. Multiple endings await based on how you navigated the horror and what you learned along the way.</p>
+        <p class="text-slate-900 font-bold text-sm">Explore the Rooms</p>
+        <p class="text-slate-500 text-xs leading-relaxed">Move through the bungalow room by room. Examine objects, find hidden items, and gather clues about where you are — and what's with you.</p>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <div class="w-8 h-8 rounded-full bg-red-900 flex items-center justify-center flex-shrink-0">
+          <span class="text-white text-xs font-black">3</span>
         </div>
+        <p class="text-slate-900 font-bold text-sm">Solve, Unlock, Survive</p>
+        <p class="text-slate-500 text-xs leading-relaxed">Use found keys and clues to unlock the next room. Avoid or endure horror events — unpredictable, tense, and designed to keep you on edge.</p>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <div class="w-8 h-8 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+          <span class="text-white text-xs font-black">4</span>
+        </div>
+        <p class="text-slate-900 font-bold text-sm">Find the Exit</p>
+        <p class="text-slate-500 text-xs leading-relaxed">The bungalow has one way out. Piece together every clue, unlock the final barrier, and escape — if you make it that far.</p>
+      </div>
+
+    </div>
+
+    <!-- Footer bar -->
+    <div class="bg-slate-900 rounded-xl p-4 mt-4 flex items-center justify-between">
+      <p class="text-white text-xs font-bold">Horror Bangla</p>
+      <div class="flex gap-3">
+        <span class="bg-red-900 text-red-200 text-xs px-3 py-1 rounded-full font-medium">~15–30 min per run</span>
+        <span class="bg-slate-700 text-slate-300 text-xs px-3 py-1 rounded-full font-medium">Any browser</span>
+        <span class="bg-slate-700 text-slate-300 text-xs px-3 py-1 rounded-full font-medium">No install</span>
+      </div>
+    </div>
+
   </div>
 </section>
