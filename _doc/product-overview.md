@@ -1,7 +1,7 @@
 # Product Overview
 
 ## Identity
-- **Working Title**: Bangla (Horror Escape Game — final name TBD, to be confirmed during onboarding)
+- **Name**: Horror Bangla
 - **Type**: Browser-based single-player horror escape game
 - **Platform**: Web browser — no download, no account, no install required
 
