@@ -1,7 +1,7 @@
 # Product Overview
 
 ## Identity
-- **Name**: Horror Bangla
+- **Name**: Horror in the Bangala
 - **Type**: Browser-based single-player horror escape game
 - **Platform**: Web browser — no download, no account, no install required
 
